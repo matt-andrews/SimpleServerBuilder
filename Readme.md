@@ -315,3 +315,8 @@ The execution is important because if your setup requires getting data from the 
 ### History
 
 While developing my mobile online RPG - [Rite of Kings](https://www.riteofkings.com) I ran into a situation where it would be beneficial to be able to quickly change protocols, or listen to different protocals at the same time. This resulted in an excessive amount of boiler plate that quickly became unmanageable. This framework solves that problem in an easy to remember format with very scalable configuration.
+
+### Contact
+If you need help you can reach me on discord Between#6164
+
+If you found this framework useful, feel free to [![donate](https://img.shields.io/badge/Donate-PayPal-ff69b4.svg)](https://paypal.me/MatthewAndrews1988/5)

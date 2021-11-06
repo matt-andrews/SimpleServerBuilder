@@ -44,7 +44,7 @@ Servers:
     Reconnect: false
 
 ```
-Create a listener that follows the namespace you defined in your service config. This listener allows you to inject functionality as you need, or can be left empty. You must also define an attribute that inherits `IServerEvent<ModelType>` with your defined model
+Create a listener that follows the namespace you defined in your service config. This listener allows you to inject functionality as you need, or can be left empty(Note usage in the ExampleGameServer). You must also define an attribute that inherits `IServerEvent<ModelType>` with your defined model
 ```c#
 class NetListener : ServerEventListener<ModelType>
 {
@@ -80,7 +80,7 @@ public class ServerEvent : Attribute, IServerEvent<ModelType>
 Then create a basic entry point
 ```c#
 private static EntryPointBuilder<ModelType> _entryPoint;
-private const string _serviceConfigPath = "path/to/serviceConfig.yaml";_
+private const string _serviceConfigPath = "path/to/serviceConfig.yaml";
 static void Main(string[] args)
 {
     _entryPoint = new ServerBuilder.EntryPoint.EntryPointBuilder<ModelType>(
@@ -235,7 +235,7 @@ public class CustomConfigOptions : IConfigOptions
 }
 
 private static EntryPointBuilder<ModelType> _entryPoint;
-private const string _serviceConfigPath = "path/to/serviceConfig.yaml";_
+private const string _serviceConfigPath = "path/to/serviceConfig.yaml";
 public static string MyStoredApiData;
 static void Main(string[] args)
 {
@@ -257,7 +257,7 @@ public class SimpleConfig : IConfig
 
 //here we will add it into the previous entry point
 private static EntryPointBuilder<ModelType> _entryPoint;
-private const string _serviceConfigPath = "path/to/serviceConfig.yaml";_
+private const string _serviceConfigPath = "path/to/serviceConfig.yaml";
 public static string MyStoredApiData;
 static void Main(string[] args)
 {

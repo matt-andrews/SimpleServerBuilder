@@ -1,0 +1,26 @@
+###
+# Example Game Server Config
+#
+# AssemblyName must be the current name of the assembly running the entry point builder
+#
+# Listener is the fully qualified class name for reflection
+#
+# MaxUsers == -1 for int.Max, or use a positive value
+#
+# TransportLayer is int to enum:
+#       LiteNetLibServer = 0,
+#       TelepathyServer = 1,
+#       TelepathyClient = 2,
+#       LiteNetLibClient = 3,
+#       WebSockets = 4
+###
+ConfigName: ExampleGameServer
+LoggerTitle: Example Game Server Logger
+AssemblyName: ExampleGameServer
+Servers:
+  Websocket_Server:
+    Key: somekey
+    TransportLayer: 4
+    MaxUsers: -1
+    Port: 9060
+    Listener: ExampleGameServer.NetListener

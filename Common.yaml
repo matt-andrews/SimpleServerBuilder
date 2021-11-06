@@ -1,0 +1,11 @@
+###
+# These are the config options that are common across all services
+###
+
+ConfigName: Common
+#The current build of the server
+Build: 1.0
+# The required client build. Set in client Globals constants
+RequiredClientBuild: 1
+# The current configuration data version
+ConfigVersion: v1.0
